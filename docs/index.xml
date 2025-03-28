@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:53955/suwandinotes/</link>
+    <link>/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Mar 2025 08:09:26 +0700</lastBuildDate>
-    <atom:link href="http://localhost:53955/suwandinotes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Third Post</title>
-      <link>http://localhost:53955/suwandinotes/posts/first-post-copy-2/</link>
+      <link>/posts/first-post-copy-2/</link>
       <pubDate>Fri, 28 Mar 2025 08:09:26 +0700</pubDate>
-      <guid>http://localhost:53955/suwandinotes/posts/first-post-copy-2/</guid>
+      <guid>/posts/first-post-copy-2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper neque, at pharetra ex. Cras blandit placerat neque, ut aliquet orci mollis ac. Pellentesque lorem ante, efficitur eget orci lacinia, mattis lacinia lacus. Phasellus libero nisl, sodales maximus vestibul</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:53955/suwandinotes/posts/first-post/</link>
+      <link>/posts/first-post/</link>
       <pubDate>Thu, 27 Mar 2025 20:09:26 +0700</pubDate>
-      <guid>http://localhost:53955/suwandinotes/posts/first-post/</guid>
+      <guid>/posts/first-post/</guid>
       <description>This is a summary that will appear in the preview</description>
     </item>
     <item>
       <title>Second Post</title>
-      <link>http://localhost:53955/suwandinotes/posts/first-post-copy/</link>
+      <link>/posts/first-post-copy/</link>
       <pubDate>Thu, 27 Mar 2025 20:09:26 +0700</pubDate>
-      <guid>http://localhost:53955/suwandinotes/posts/first-post-copy/</guid>
+      <guid>/posts/first-post-copy/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper neque, at pharetra ex. Cras blandit placerat neque, ut aliquet orci mollis ac. Pellentesque lorem ante, efficitur eget orci lacinia, mattis lacinia lacus. Phasellus libero nisl, sodales maximus vestibul</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:53955/suwandinotes/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53955/suwandinotes/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;Hello! I&amp;rsquo;m an occasional blogger. I used to write about random stuffs at &lt;a href=&#34;https://suwanditalks.com&#34;&gt;suwanditalks.com&lt;/a&gt; before I moved here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-background&#34;&gt;My Background&lt;/h3&gt;&#xA;&lt;p&gt;I have a background in process improvement, cost reduction, problem solving, software, and enjoy writing about various topics including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technology trends&lt;/li&gt;&#xA;&lt;li&gt;Personal projects&lt;/li&gt;&#xA;&lt;li&gt;Business and management&lt;/li&gt;&#xA;&lt;li&gt;Trend observations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;this-blog&#34;&gt;This Blog&lt;/h3&gt;&#xA;&lt;p&gt;This blog was created using Hugo, a fast and flexible static site generator.&lt;/p&gt;</description>
     </item>
   </channel>
