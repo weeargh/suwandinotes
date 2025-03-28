@@ -20,12 +20,17 @@
         <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
-      <hr/>
     </nav>
+    <hr/>
 
     <style>
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
       .site-title {
-        float: left;
         margin-right: 2rem;
       }
       .site-title-link {
@@ -35,7 +40,10 @@
         color: inherit;
       }
       .menu {
-        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
       }
       .menu li {
         margin-right: 0.8rem;
@@ -43,5 +51,9 @@
       }
       .menu a {
         font-style: italic;
+      }
+      hr {
+        width: 100%;
+        margin: 0.5rem 0 1.5rem 0;
       }
     </style>
