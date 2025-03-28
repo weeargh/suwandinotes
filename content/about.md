@@ -4,16 +4,16 @@ draft = false
 title = 'About'
 +++
 
-Hello! I'm an occasional blogger. I used to write about random stuffs at [suwanditalks.com](https://suwanditalks.com) before I moved here.
+Hello! I'm an occasional blogger. I used to write about random stuffs on my personal blog, which has been a while since the last post. 
+I am going to use this blog to put down my thinking and observation. 
 
 ### My Background
 
 I have a background in process improvement, cost reduction, problem solving, software, and enjoy writing about various topics including:
 
-- Technology trends
-- Personal projects
 - Business and management
 - Trend observations
+- Personal projects
 
 ### This Blog
 
