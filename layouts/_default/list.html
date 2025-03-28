@@ -9,8 +9,8 @@
 <ul class="post-list">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
-  <li class="post-item">
+  {{ range $index, $page := (where $pages "Section" "!=" "") }}
+  <li class="post-item {{ if eq $index 0 }}featured-post{{ end }}">
     <span class="date">{{ .Date.Format "2006/01/02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
     <div class="preview">{{ .Summary }}</div>
@@ -39,6 +39,16 @@
 }
 .preview {
   margin-top: 0.5rem;
+  color: #555;
+}
+.featured-post {
+  background-color: #ffffcc;
+  border: 1px solid #ffeb3b;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.featured-post .date {
   color: #555;
 }
 </style>
