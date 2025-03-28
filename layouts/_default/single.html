@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+<h1><span class="title">{{ .Title | markdownify }}</span></h1>
+{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
+</div>
+
+<main>
+{{ .Content }}
+</main>
+
+<nav class="post-nav">
+  <div class="nav-links">
+    {{ with .PrevInSection }}
+      <a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>
+    {{ end }}
+  </div>
+</nav>
+
+<style>
+.post-nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.post-nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.post-nav a:hover {
+  background: #f5f5f5;
+}
+</style>
+
+{{ partial "footer.html" . }}
