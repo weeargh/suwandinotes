@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://weeargh.github.io/suwandinotes/posts/</loc>
+    <loc>http://localhost:53955/suwandinotes/posts/</loc>
     <lastmod>2025-03-28T08:09:26+07:00</lastmod>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/posts/first-post-copy-2/</loc>
+    <loc>http://localhost:53955/suwandinotes/posts/first-post-copy-2/</loc>
     <lastmod>2025-03-28T08:09:26+07:00</lastmod>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/</loc>
+    <loc>http://localhost:53955/suwandinotes/</loc>
     <lastmod>2025-03-27T20:11:56+07:00</lastmod>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/posts/first-post/</loc>
+    <loc>http://localhost:53955/suwandinotes/posts/first-post/</loc>
     <lastmod>2025-03-27T20:09:26+07:00</lastmod>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/posts/first-post-copy/</loc>
+    <loc>http://localhost:53955/suwandinotes/posts/first-post-copy/</loc>
     <lastmod>2025-03-27T20:09:26+07:00</lastmod>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/about/</loc>
+    <loc>http://localhost:53955/suwandinotes/about/</loc>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/categories/</loc>
+    <loc>http://localhost:53955/suwandinotes/categories/</loc>
   </url><url>
-    <loc>https://weeargh.github.io/suwandinotes/tags/</loc>
+    <loc>http://localhost:53955/suwandinotes/tags/</loc>
   </url>
 </urlset>
