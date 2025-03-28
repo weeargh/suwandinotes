@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    <nav>
+      <div class="site-title">
+        <a href="{{ "/" | relURL }}" class="site-title-link">SuwandiNotes.com</a>
+      </div>
+      <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <hr/>
+    </nav>
+
+    <style>
+      .site-title {
+        float: left;
+        margin-right: 2rem;
+      }
+      .site-title-link {
+        font-weight: bold;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: inherit;
+      }
+      .menu {
+        overflow: hidden;
+      }
+      .menu li {
+        margin-right: 0.8rem;
+        display: inline-block;
+      }
+      .menu a {
+        font-style: italic;
+      }
+    </style>
