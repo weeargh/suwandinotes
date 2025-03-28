@@ -1,4 +1,4 @@
-baseURL = 'https://weeargh.github.io/'
+baseURL = 'https://weeargh.github.io/suwandinotes/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-xmin'
