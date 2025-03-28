@@ -2,7 +2,7 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-xmin'
-publishDir = 'docs'
+# publishDir = 'docs'
 
 [menu]
   [[menu.main]]
