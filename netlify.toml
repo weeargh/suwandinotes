@@ -1,0 +1,6 @@
+[build]
+  command = "hugo --gc --minify"
+  publish = "docs"
+
+[build.environment]
+  HUGO_VERSION = "0.125.4"  # Match your local Hugo version
