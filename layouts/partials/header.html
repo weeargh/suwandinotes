@@ -9,26 +9,14 @@
     {{ else }}
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ end }}
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
-    {{ partial "head_custom.html" . }}
-  </head>
-
-  <body>
-    <nav>
-      <div class="site-title">
-        <a href="{{ "/" | relURL }}" class="site-title-link">SuwandiNotes.com</a>
-      </div>
-      <ul class="menu">
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
-    <hr/>
-
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Inline critical CSS -->
     <style>
+      /* Critical navigation styles */
       nav {
         display: flex;
         align-items: center;
@@ -61,4 +49,61 @@
         width: 100%;
         margin: 0.5rem 0 1.5rem 0;
       }
+      
+      /* Font definitions with swap */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Inter Regular'), local('Inter-Regular'), url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format('woff2');
+      }
+      @font-face {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2) format('woff2');
+      }
+      
+      /* Basic font assignments */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, .title, .menu, footer, .site-title {
+        font-family: 'Lora', serif;
+      }
     </style>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="{{ "css/style.css" | relURL }}" as="style">
+    <link rel="preload" href="{{ "css/critical.css" | relURL }}" as="style">
+    
+    <!-- Load Google Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Fallback for Google Fonts if JavaScript is disabled -->
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/critical.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    <nav>
+      <div class="site-title">
+        <a href="{{ "/" | relURL }}" class="site-title-link">SuwandiNotes.com</a>
+      </div>
+      <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <hr/>
