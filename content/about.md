@@ -4,6 +4,8 @@ draft = false
 title = 'About'
 +++
 
+# Hi, I'm Suwandi Soh, cofounder and CEO of Mekari.
+
 Hello! I'm an occasional blogger. I used to write about random stuffs on my personal blog, which has been a while since the last post. 
 I am going to use this blog to put down my thinking and observation. 
 

@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'SuwandiNotes.com'
 theme = 'hugo-xmin'
 # publishDir = 'docs'
 
